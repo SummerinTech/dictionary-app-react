@@ -2,7 +2,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Dictionary from "./Dictionary";
 
-function App() {
+const App = () => {
 	return (
 		<div className="App">
 			<div className="container">
@@ -27,6 +27,6 @@ function App() {
 			</div>
 		</div>
 	);
-}
+};
 
 export default App;
