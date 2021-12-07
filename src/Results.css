@@ -5,3 +5,7 @@
 .Results-example {
 	font-style: italic;
 }
+
+.Meaning .Synonym-container {
+	display: inline-block;
+}
