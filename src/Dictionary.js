@@ -21,13 +21,19 @@ const Dictionary = () => {
 
 	return (
 		<div className="Dictionary">
-			<form onSubmit={handleSubmit} className="Dictionary-form">
-				<input
-					type="search"
-					onChange={(e) => setKeyword(e.target.value)}
-					value={keyword}
-				></input>
-			</form>
+			<section>
+				<form onSubmit={handleSubmit} className="Dictionary-form">
+					<input
+						type="search"
+						onChange={(e) => setKeyword(e.target.value)}
+						value={keyword}
+						placeholder="Search for a definition..."
+					></input>
+				</form>
+				<div className="hints">
+					Suggested keywords: sunset, wine, travel, yoga
+				</div>
+			</section>
 			<Results results={results} />
 		</div>
 	);

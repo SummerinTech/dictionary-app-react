@@ -2,6 +2,9 @@
 	margin: 1rem 0;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+.App {
+	background-color: #f9f8fe;
+}
 
 .App-header h1 {
 	font-weight: bold;
@@ -14,4 +17,11 @@
 .App .github-link {
 	text-decoration: none;
 	color: inherit;
+}
+.App a {
+	color: #5c3681;
+}
+
+.App a:hover {
+	color: #1f122b;
 }
