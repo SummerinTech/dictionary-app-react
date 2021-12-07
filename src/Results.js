@@ -10,11 +10,7 @@ const Results = (props) => {
 				<section>
 					<h2 className="Results-word">{props.results.word}</h2>
 					{props.results.phonetics.map((phonetic, index) => {
-						return (
-							<div key={index}>
-								<Phonetics phonetic={phonetic} />
-							</div>
-						);
+						return <Phonetics key={index} phonetic={phonetic} />;
 					})}
 				</section>
 				{props.results.meanings.map((meaning, index) => {

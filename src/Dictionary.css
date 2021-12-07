@@ -2,6 +2,12 @@
 	margin-top: 1rem;
 }
 
+.Dictionary h2 {
+	font-size: 20px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
 .Dictionary section {
 	background-color: white;
 	padding: 30px;

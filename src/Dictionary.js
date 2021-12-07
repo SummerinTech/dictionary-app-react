@@ -34,12 +34,13 @@ const Dictionary = (props) => {
 		return (
 			<div className="Dictionary">
 				<section>
+					<h2>What do you want to look up? </h2>
 					<form onSubmit={handleSubmit} className="Dictionary-form">
 						<input
 							type="search"
 							onChange={(e) => setKeyword(e.target.value)}
-							value={keyword}
 							placeholder="Search for a definition..."
+							defaultValue={props.defaultKeyword}
 						></input>
 					</form>
 					<div className="hints">
