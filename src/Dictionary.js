@@ -5,16 +5,11 @@ import "./Dictionary.css";
 
 const Dictionary = () => {
 	const [keyword, setKeyword] = useState("");
-	const [dictionaryData, setDictionaryData] = useState({});
+	const [results, setResults] = useState(null);
 
 	function searchDictionary(response) {
 		console.log(response.data[0]);
-		setDictionaryData({
-			word: response.data[0].word,
-			type: response.data[0].meanings[0].partOfSpeech,
-			definition: response.data[0].meanings[0].definitions[0].definition,
-			example: response.data[0].meanings[0].definitions[0].example,
-		});
+		setResults(response.data[0]);
 	}
 
 	function handleSubmit(e) {
@@ -33,12 +28,7 @@ const Dictionary = () => {
 					value={keyword}
 				></input>
 			</form>
-			<Results
-				word={dictionaryData.word}
-				type={dictionaryData.type}
-				definition={dictionaryData.definition}
-				example={dictionaryData.example}
-			/>
+			<Results results={results} />
 		</div>
 	);
 };
