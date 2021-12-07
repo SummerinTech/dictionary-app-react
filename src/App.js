@@ -10,7 +10,7 @@ const App = () => {
 					<h1>Dictionary App 🤓</h1>
 				</header>
 				<main>
-					<Dictionary />
+					<Dictionary defaultKeyword="Wanderlust" />
 				</main>
 				<footer className="App-footer">
 					<small>

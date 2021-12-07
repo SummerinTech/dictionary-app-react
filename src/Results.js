@@ -8,7 +8,7 @@ const Results = (props) => {
 		return (
 			<div className="Results">
 				<section>
-					<h3 className="Results-word">{props.results.word}</h3>
+					<h2 className="Results-word">{props.results.word}</h2>
 					{props.results.phonetics.map((phonetic, index) => {
 						return (
 							<div key={index}>
