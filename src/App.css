@@ -1,1 +1,18 @@
+.App {
+	text-align: center;
+	margin: 1rem 0;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 
+.App-header h1 {
+	font-weight: bold;
+}
+
+.App-footer {
+	margin-top: 1rem;
+}
+
+.App .github-link {
+	text-decoration: none;
+	color: inherit;
+}
