@@ -8,7 +8,7 @@ const Photos = (props) => {
 				<div className="row">
 					{props.photos.map((photo, index) => {
 						return (
-							<div className="col-4" key={index}>
+							<div className="col-lg-4 pb-4" key={index}>
 								<a href={photo.src.original} target="__blank" rel="noreferrer">
 									<img
 										src={photo.src.landscape}
