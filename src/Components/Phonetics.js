@@ -1,5 +1,5 @@
 import React from "react";
-import "./Phonetics.css";
+import "./Styles/Phonetics.css";
 
 const Phonetics = (props) => {
 	return (

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Photos.css";
+import "./Styles/Photos.css";
 
 const Photos = (props) => {
 	if (props.photos) {

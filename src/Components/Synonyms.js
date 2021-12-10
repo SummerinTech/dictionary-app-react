@@ -1,5 +1,5 @@
 import React from "react";
-import "./Synonyms.css";
+import "./Styles/Synonyms.css";
 
 const Synonyms = (props) => {
 	if (props.synonyms) {
